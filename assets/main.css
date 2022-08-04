@@ -3,24 +3,24 @@
   \************************************************************************************************************/
 /*  Font family  */
 * {
-  background: #000 !important;
-  color: #fff !important;
+  background: #fff !important;
+  color: #000 !important;
 }
 
 p, a, h1, h2, h3, label {
-  color: #fff !important;
+  color: #000 !important;
 }
 
 body, span {
   font-family: "DM Sans", sans-serif !important;
-  color: #fff !important;
-  border: #fff !important;
+  color: #000 !important;
+  border: #000 !important;
 }
 
 h1, h2, h3, input {
   font-family: "DM Sans", sans-serif !important;
-  color: #fff !important;
-  border: #fff !important;
+  color: #000 !important;
+  border: #000 !important;
 }
 
 footer * {
