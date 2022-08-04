@@ -1,0 +1,11 @@
+<div class="home-highlights__card">
+    <a href="{{ url }}">
+        <div class="home-highlights__card--imagen" style="background-image: url('{{ imagen | img_url: 'master' }}');">
+            <img src="" alt="">
+        </div>
+        <div class="home-highlights__card--container">
+            <h3 class="home-highlights__card--title">{{ title }}</h3>
+            <p class="home-highlights__card--price">{{ price | money_without_trailing_zeros }}</p>
+        </div>
+    </a>
+</div>

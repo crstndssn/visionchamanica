@@ -1,0 +1,33 @@
+{
+  "name": "cristiandussan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --watch --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crstndssn/cristiandussan"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crstndssn/cristiandussan"
+  },
+  "homepage": "https://cristiandussan.com/",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.5.1",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.4.4",
+    "sass": "^1.43.4",
+    "sass-loader": "^12.3.0",
+    "webpack": "^5.62.1"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.9.1"
+  }
+}

@@ -1,0 +1,35 @@
+.home-collections {
+  background-color: $primary;
+
+  a {
+    text-decoration: none;
+  }
+
+  &__container {
+    inline-size: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 3rem;
+    column-gap: 3rem;
+    padding: 7rem 0;
+    @include media("tablet") {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 2rem;
+    }
+  }
+
+  &__card {
+    background-color: $background;
+    text-align: center;
+    border-radius: 2rem;
+
+    &--title {
+      text-decoration: none;
+      color: $primary;
+      font-size: 3rem;
+      font-weight: 500;
+      margin: 7rem;
+    }
+  }
+}

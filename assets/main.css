@@ -1,0 +1,117 @@
+/*!************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/app.scss ***!
+  \************************************************************************************************************/
+/*  Font family  */
+* {
+  background: #000 !important;
+  color: #fff !important;
+}
+
+p, a, h1, h2, h3, label {
+  color: #fff !important;
+}
+
+body, span {
+  font-family: "DM Sans", sans-serif !important;
+  color: #fff !important;
+  border: #fff !important;
+}
+
+h1, h2, h3, input {
+  font-family: "DM Sans", sans-serif !important;
+  color: #fff !important;
+  border: #fff !important;
+}
+
+footer * {
+  color: #fff !important;
+}
+
+.field__label {
+  color: #fff !important;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #FFFFF9 !important;
+  overflow-x: hidden;
+}
+
+.home-init {
+  max-width: 1600px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin: 0 auto;
+  padding: 0 5rem;
+  row-gap: 2rem;
+  column-gap: 2rem;
+}
+@media (min-width: 720px) {
+  .home-init {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.home-init__grid a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  text-decoration: none;
+  border: solid 1px #fff;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 3rem;
+}
+
+.home-color {
+  max-width: 1600px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin: 0 auto;
+  padding: 0 5rem;
+  row-gap: 2rem;
+  column-gap: 2rem;
+  margin-top: 2rem;
+}
+@media (min-width: 720px) {
+  .home-color {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.home-color__grid a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 3rem;
+}
+
+footer {
+  background-color: #FFFFF9;
+  color: #000;
+}
+footer * {
+  color: #000;
+}
+footer input {
+  color: #000;
+}
+footer h1, footer h2, footer h3, footer h4, footer p, footer a, footer label {
+  color: #000 !important;
+}
+footer .newsletter-form__field-wrapper .field__input {
+  border-color: black;
+}
+footer .newsletter-form__field-wrapper .field__input label {
+  color: black !important;
+}

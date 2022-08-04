@@ -1,0 +1,56 @@
+.home-news {
+  padding: 1rem 0;
+  background-color: $background;
+  * {
+      margin: 0;
+  }
+
+  a {
+      text-decoration: none;
+      color: $background;
+  }
+
+  img {
+      width: 100%;
+      height: auto;
+      border-radius: 1rem 1rem 0 0;
+  }
+
+  &__title {
+      width: 100%;
+      inline-size: 90%;
+      margin: 3rem auto 3rem auto;
+
+      h2 {
+          color: $primary;
+          font-weight: 700;
+          font-size: 4rem;
+      }
+  }
+
+  &__grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 2rem;
+      @include media("tablet") {
+          grid-template-columns: repeat(3, 1fr);
+      }
+      column-gap: 2rem;
+      inline-size: 90%;
+      margin: 0 auto 3rem auto;
+  }
+
+  &__more {
+      width: 100%;
+      inline-size: 90%;
+      margin: 3rem auto 3rem auto;
+      text-align: center;
+      a {
+          border: 1px $primary solid;
+          border-radius: 3rem;
+          font-size: 18px;
+          padding: 0.5rem 1.5rem;
+          color: $primary;
+      }
+  }
+}

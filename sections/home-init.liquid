@@ -1,0 +1,32 @@
+<div class="home-init">
+  {% for block in section.blocks %}
+    <div class="home-init__grid">
+        <a href="{{ block.settings.brand__link }}">{{ block.settings.brand__name }}</a>
+    </div>
+  {% endfor %}
+</div>
+
+{% schema %}
+{
+  "name": "home init",
+  "tag": "section",
+  "blocks": [
+    {
+      "type": "brand",
+      "name": "brand",
+      "settings": [
+        {
+          "type": "text",
+          "id": "brand__name",
+          "label": "brand name"
+        },
+        {
+          "type": "url",
+          "id": "brand__link",
+          "label": "brand link"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

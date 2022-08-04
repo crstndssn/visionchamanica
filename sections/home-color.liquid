@@ -1,0 +1,38 @@
+<div class="home-color">
+  {% for block in section.blocks %}
+    <div class="home-color__grid">
+      {% assign color = block.settings.brand__color %}
+      <a target="_blank" href="{{ block.settings.brand__link }}" style="background: {{ color }} !important;">{{ block.settings.brand__name }}</a>
+    </div>
+  {% endfor %}
+</div>
+
+{% schema %}
+{
+  "name": "home color",
+  "tag": "section",
+  "blocks": [
+    {
+      "type": "brand",
+      "name": "brand",
+      "settings": [
+        {
+          "type": "text",
+          "id": "brand__name",
+          "label": "brand name"
+        },
+        {
+          "type": "url",
+          "id": "brand__link",
+          "label": "brand link"
+        },
+        {
+          "type": "color",
+          "id": "brand__color",
+          "label": "brand color"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
