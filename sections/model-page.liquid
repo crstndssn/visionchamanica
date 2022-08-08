@@ -4,6 +4,10 @@
     <h2>{{ page_description }}</h2>
   </div>
   <div>
-    
+    {% for article in blog.articles %}
+
+    <a href="{{ article.url }}">{{ article.title }}</a>
+      
+    {% endfor %}
   </div>
 </div>
