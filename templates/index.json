@@ -1,7 +1,10 @@
 {
   "sections": {
     "home_init": {
-      "type": "home-init"
+      "type": "home-init",
+      "settings": {
+        "page_blog": "news"
+      }
     }
   },
   "order": [
