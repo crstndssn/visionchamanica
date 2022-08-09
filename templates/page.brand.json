@@ -3,6 +3,7 @@
     "main": {
       "type": "model-page",
       "settings": {
+        "page_blog": "territorio"
       }
     }
   },
