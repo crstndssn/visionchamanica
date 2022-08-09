@@ -3,7 +3,7 @@
   \************************************************************************************************************/
 /*  Font family  */
 * {
-  background: #fff !important;
+  background: #FFF3CB !important;
   color: #000 !important;
 }
 
@@ -24,11 +24,11 @@ h1, h2, h3, input {
 }
 
 footer * {
-  color: #fff !important;
+  color: #FFF3CB !important;
 }
 
 .field__label {
-  color: #fff !important;
+  color: #FFF3CB !important;
 }
 
 html {
@@ -36,36 +36,45 @@ html {
 }
 
 body {
-  background-color: #FFFFF9 !important;
+  background-color: #FFF3CB !important;
   overflow-x: hidden;
 }
 
-.home-init {
+.model-pages {
   max-width: 1600px;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   margin: 0 auto;
-  padding: 0 5rem;
+  padding: 0 1.5rem;
   row-gap: 2rem;
   column-gap: 2rem;
 }
 @media (min-width: 720px) {
-  .home-init {
-    grid-template-columns: repeat(2, 1fr);
+  .model-pages {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 5rem;
   }
 }
-.home-init__grid a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 150px;
-  text-decoration: none;
-  border: solid 1px #fff;
-  text-align: center;
+.model-pages__card--img {
+  width: auto;
+  height: 250px;
+  overflow: hidden;
   border-radius: 10px;
-  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.model-pages__card--page {
+  background-color: #000 !important;
+  color: #FFF3CB !important;
+  padding: 2px 7px;
+  border-radius: 15px;
+  background-color: #000 !important;
+  color: #FFF3CB !important;
+  padding: 2px 7px;
+  font-size: 14px;
+}
+.model-pages__card h2 {
+  margin-top: 5px;
 }
 
 .home-color {

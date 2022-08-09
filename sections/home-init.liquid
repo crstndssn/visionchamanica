@@ -1,31 +1,32 @@
-<div class="home-init">
-  {% for block in section.blocks %}
-    <div class="home-init__grid">
-        <a href="{{ block.settings.brand__link }}">{{ block.settings.brand__name }}</a>
+<div class="model-pages">
+  {% assign blogName = section.settings.page_blog %}
+  {% for article in blogName.articles %}
+    <!-- CARD -->
+    <div class="model-pages__card">
+      <a href="{{ article.url }}">
+        <div class="model-pages__card--img">
+            <img src="{{ article.image | img_url: 'master' }}" alt="{{ article.alt }}">
+        </div></a>
+        {%- for tag in article.tags -%}
+          <a class="model-pages__card--page" href="{{ blog.url }}/pages/{{ tag | handle }}">{{ tag }}</a>{% unless forloop.last %} {% endunless %}
+        {%- endfor -%}
+        <a href="{{ article.url }}">
+          <h2>{{ article.title }}</h2>
+        </a>
     </div>
   {% endfor %}
 </div>
+
 
 {% schema %}
 {
   "name": "home init",
   "tag": "section",
-  "blocks": [
+  "settings": [
     {
-      "type": "brand",
-      "name": "brand",
-      "settings": [
-        {
-          "type": "text",
-          "id": "brand__name",
-          "label": "brand name"
-        },
-        {
-          "type": "url",
-          "id": "brand__link",
-          "label": "brand link"
-        }
-      ]
+      "type": "blog",
+      "id": "page_blog",
+      "label": "select blog"
     }
   ]
 }

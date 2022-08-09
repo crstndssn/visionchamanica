@@ -1,29 +1,39 @@
-.home-init {
+.model-pages {
   max-width: 1600px;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   margin: 0 auto;
-  padding: 0 5rem;
+  padding: 0 1.5rem;
   row-gap: 2rem;
   column-gap: 2rem;
 
   @include media("tablet") {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 5rem;
   }
 
-  &__grid {
-    a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 150px;
-      text-decoration: none;
-      border: solid 1px #fff;
-      text-align: center;
+  &__card {
+    &--img {
+      width: auto;
+      height: 250px;
+      overflow: hidden;
       border-radius: 10px;
-      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    &--page {
+      background-color: #000 !important;
+      color: #FFF3CB !important;
+      padding: 2px 7px;
+      border-radius: 15px;
+      background-color: #000 !important;
+      color: #FFF3CB !important;
+      padding: 2px 7px;
+      font-size: 14px;
+    }
+    h2 {
+      margin-top: 5px;
     }
   }
+
 }
