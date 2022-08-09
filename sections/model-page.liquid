@@ -1,13 +1,29 @@
-<div>
-  <div>
-    <h1>{{ page_title }}</h1>
-    <h2>{{ page_description }}</h2>
-  </div>
-  <div>
-    {% for article in blog.articles %}
-
-    <a href="{{ article.url }}">{{ article.title }}</a>
-      
-    {% endfor %}
-  </div>
+<div class="model-pages">
+  {% assign blogName = section.settings.page_blog %}
+  {% for article in blogName.articles %}
+    <!-- CARD -->
+    <div class="model-pages__card">
+      <a href="{{ article.url }}">
+        <div class="model-pages__card--img">
+            <img src="{{ article.image | img_url: 'master' }}" alt="{{ article.alt }}">
+        </div></a>
+        <a href="{{ article.url }}">
+          <h2>{{ article.title }}</h2>
+        </a>
+    </div>
+  {% endfor %}
 </div>
+
+{% schema %}
+{
+  "name": "home init",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "blog",
+      "id": "page_blog",
+      "label": "select blog"
+    }
+  ]
+}
+{% endschema %}
