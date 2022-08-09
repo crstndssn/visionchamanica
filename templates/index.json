@@ -3,7 +3,7 @@
     "home_init": {
       "type": "home-init",
       "settings": {
-        "page_blog": "news"
+        "page_blog": "territorio"
       }
     }
   },
