@@ -1,30 +1,50 @@
 * {
-  background: #FFF3CB !important;
+  background: #fff3cb !important;
   color: #000 !important;
-
 }
-  p, a, h1, h2, h3, label {
-    color: #000   !important;
-  }
-body, span {
-  font-family: 'DM Sans', sans-serif !important;
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Bungee", cursive !important;
+}
+
+p,
+a,
+label {
+  font-family: "Ubuntu", sans-serif !important;
+  color: #000 !important;
+}
+body,
+span {
   color: #000 !important;
   border: #000 !important;
 }
 
-h1, h2, h3, input {
-  font-family: 'DM Sans', sans-serif !important;
+h1,
+h2,
+h3,
+input {
   color: #000 !important;
   border: #000 !important;
 }
-footer { 
+
+footer {
   * {
-     color: #FFF3CB !important;
+    color: #fff3cb !important;
   }
- 
 }
 
 .field__label {
-  color: #FFF3CB !important;
+  color: #fff3cb !important;
 }
 
+a {
+  text-decoration: none !important;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}

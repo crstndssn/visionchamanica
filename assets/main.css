@@ -3,32 +3,53 @@
   \************************************************************************************************************/
 /*  Font family  */
 * {
-  background: #FFF3CB !important;
+  background: #fff3cb !important;
   color: #000 !important;
 }
 
-p, a, h1, h2, h3, label {
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Bungee", cursive !important;
+}
+
+p,
+a,
+label {
+  font-family: "Ubuntu", sans-serif !important;
   color: #000 !important;
 }
 
-body, span {
-  font-family: "DM Sans", sans-serif !important;
+body,
+span {
   color: #000 !important;
   border: #000 !important;
 }
 
-h1, h2, h3, input {
-  font-family: "DM Sans", sans-serif !important;
+h1,
+h2,
+h3,
+input {
   color: #000 !important;
   border: #000 !important;
 }
 
 footer * {
-  color: #FFF3CB !important;
+  color: #fff3cb !important;
 }
 
 .field__label {
-  color: #FFF3CB !important;
+  color: #fff3cb !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
 html {
@@ -45,7 +66,7 @@ body {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  margin: 0 auto;
+  margin: 4rem auto 0 auto;
   padding: 0 1.5rem;
   row-gap: 2rem;
   column-gap: 2rem;
@@ -58,7 +79,7 @@ body {
 }
 .model-pages__card--img {
   width: auto;
-  height: 250px;
+  height: 500px;
   overflow: hidden;
   border-radius: 10px;
   margin-bottom: 1rem;
@@ -105,22 +126,9 @@ body {
   font-size: 3rem;
 }
 
-footer {
-  background-color: #FFFFF9;
-  color: #000;
-}
-footer * {
-  color: #000;
-}
-footer input {
-  color: #000;
-}
-footer h1, footer h2, footer h3, footer h4, footer p, footer a, footer label {
-  color: #000 !important;
-}
-footer .newsletter-form__field-wrapper .field__input {
-  border-color: black;
-}
-footer .newsletter-form__field-wrapper .field__input label {
-  color: black !important;
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0;
 }

@@ -1,27 +1,6 @@
-footer {
-  background-color: #FFFFF9;
-  color: #000;
-
-  * {
-    color: #000;
-  }
-
-  input {
-    color: #000;
-  }
-
-
-  h1, h2, h3 , h4, p, a, label {
-    color: #000 !important;
-  }
-
-  .newsletter-form__field-wrapper .field__input {
-    border-color: black;
-
-    label {
-      color: black  !important;
-    }
-
-}
-
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0;
 }
