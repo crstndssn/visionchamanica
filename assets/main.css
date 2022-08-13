@@ -79,7 +79,7 @@ body {
 }
 .model-pages__card--img {
   width: auto;
-  height: 500px;
+  max-height: 350px;
   overflow: hidden;
   border-radius: 10px;
   margin-bottom: 1rem;
