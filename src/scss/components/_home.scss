@@ -1,5 +1,5 @@
 * {
-  background: #fff3cb !important;
+  background: transparent !important;
   color: #000 !important;
 }
 
@@ -32,12 +32,12 @@ input {
 
 footer {
   * {
-    color: #fff3cb !important;
+    color: #FFFCEB !important;
   }
 }
 
 .field__label {
-  color: #fff3cb !important;
+  color: #FFFCEB !important;
 }
 
 a {
@@ -47,4 +47,25 @@ a {
 img {
   width: 100%;
   height: auto;
+}
+
+.header {
+  background-color: #00000017 !important;
+  padding-top: 3px !important;
+  margin: 10px !important;
+  padding-bottom: 3px !important;
+  border-radius: 10px;
+}
+
+.social-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  background-color: transparent !important;
+
+}
+
+.logo-header {
+  padding: 12px;
 }

@@ -1,0 +1,18 @@
+<div class="logo-header">
+  {% assign imagenHome = section.settings.home_header  %}
+  <img src="{{ imagenHome | file_url }}" alt="">
+</div>
+
+{% schema %}
+{
+  "name": "home header",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "home_header",
+      "label": "add image"
+    }
+  ]
+}
+{% endschema %}
