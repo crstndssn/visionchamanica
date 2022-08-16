@@ -1,7 +1,10 @@
 {
   "sections": {
     "home_header": {
-      "type": "home-header"
+      "type": "home-header",
+      "settings": {
+        "home_header": "logo-vision-chamanica.svg"
+      }
     },
     "home_init": {
       "type": "home-init",
