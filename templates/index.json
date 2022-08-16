@@ -1,5 +1,8 @@
 {
   "sections": {
+    "home_header": {
+      "type": "home-header"
+    },
     "home_init": {
       "type": "home-init",
       "settings": {
@@ -8,6 +11,7 @@
     }
   },
   "order": [
+    "home_header",
     "home_init"
   ]
 }
