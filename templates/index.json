@@ -6,6 +6,9 @@
         "home_header": "logo-vision-chamanica.svg"
       }
     },
+    "home_color": {
+      "type": "home-color"
+    },
     "home_init": {
       "type": "home-init",
       "settings": {
@@ -15,6 +18,7 @@
   },
   "order": [
     "home_header",
+    "home_color",
     "home_init"
   ]
 }
