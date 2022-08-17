@@ -1,6 +1,9 @@
 * {
   background: transparent !important;
   color: #000 !important;
+
+
+
 }
 
 h1,
@@ -8,7 +11,7 @@ h2,
 h3,
 h4 {
   font-family: "Ubuntu" !important;
-  font-weight: 600 !important;
+  font-weight: 400 !important;
 }
 
 p,
@@ -21,6 +24,12 @@ body,
 span {
   color: #000 !important;
   border: #000 !important;
+
+  padding: 0 2rem;
+
+  @include media("tablet") {
+    padding: 0;
+  }
 }
 
 h1,
@@ -51,9 +60,10 @@ img {
 }
 
 .header {
+  max-width: 1600px !important;
   background-color: #00000017 !important;
   padding-top: 3px !important;
-  margin: 10px !important;
+  margin: 10px auto !important;
   padding-bottom: 3px !important;
   border-radius: 10px;
 }
@@ -72,7 +82,7 @@ img {
 }
 
 .logo-header {
-  padding: 12px;
+  padding: 12px 0;
 }
 
 .container {

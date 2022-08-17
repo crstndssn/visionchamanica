@@ -12,7 +12,7 @@ h2,
 h3,
 h4 {
   font-family: "Ubuntu" !important;
-  font-weight: 600 !important;
+  font-weight: 400 !important;
 }
 
 p,
@@ -26,6 +26,13 @@ body,
 span {
   color: #000 !important;
   border: #000 !important;
+  padding: 0 2rem;
+}
+@media (min-width: 720px) {
+  body,
+span {
+    padding: 0;
+  }
 }
 
 h1,
@@ -54,9 +61,10 @@ img {
 }
 
 .header {
+  max-width: 1600px !important;
   background-color: #00000017 !important;
   padding-top: 3px !important;
-  margin: 10px !important;
+  margin: 10px auto !important;
   padding-bottom: 3px !important;
   border-radius: 10px;
 }
@@ -73,7 +81,7 @@ img {
 }
 
 .logo-header {
-  padding: 12px;
+  padding: 12px 0;
 }
 
 .container {
@@ -96,14 +104,12 @@ body {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   margin: 4rem auto 0 auto;
-  padding: 0 1.5rem;
   row-gap: 2rem;
   column-gap: 2rem;
 }
 @media (min-width: 720px) {
   .model-pages {
     grid-template-columns: repeat(3, 1fr);
-    padding: 0 5rem;
   }
 }
 .model-pages__card h2 {
@@ -139,16 +145,15 @@ body {
   max-width: 1600px;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   margin: 0 auto;
-  padding: 0 5rem;
   row-gap: 2rem;
   column-gap: 2rem;
   margin-top: 2rem;
 }
 @media (min-width: 720px) {
   .home-color {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 .home-color__grid a {
@@ -156,11 +161,12 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 150px;
+  height: 70px;
   text-decoration: none;
   text-align: center;
   border-radius: 10px;
   font-size: 3rem;
+  color: #fdf8e9 !important;
 }
 
 .footer {

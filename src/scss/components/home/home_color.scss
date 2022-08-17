@@ -2,15 +2,14 @@
   max-width: 1600px;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   margin: 0 auto;
-  padding: 0 5rem;
   row-gap: 2rem;
   column-gap: 2rem;
   margin-top: 2rem;
 
   @include media("tablet") {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 
   &__grid {
@@ -19,11 +18,12 @@
       justify-content: center;
       align-items: center;
       width: 100%;
-      height: 150px;
+      height: 70px;
       text-decoration: none;
       text-align: center;
       border-radius: 10px;
       font-size: 3rem;
+      color: #fdf8e9 !important;
     }
   }
 }
