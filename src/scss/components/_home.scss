@@ -65,8 +65,17 @@ img {
   column-gap: 10px;
   background-color: transparent !important;
 
+  svg {
+    width: 24px;
+  }
+
 }
 
 .logo-header {
   padding: 12px;
+}
+
+.container {
+  max-width: 1600px !important;
+  margin: 2rem auto !important;
 }
