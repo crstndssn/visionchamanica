@@ -11,7 +11,8 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Bungee", cursive !important;
+  font-family: "Ubuntu" !important;
+  font-weight: 600 !important;
 }
 
 p,
@@ -97,6 +98,9 @@ body {
     padding: 0 5rem;
   }
 }
+.model-pages__card h2 {
+  margin-bottom: 0.5rem;
+}
 .model-pages__card--img {
   width: auto;
   max-height: 350px;
@@ -113,6 +117,11 @@ body {
   color: #FFF3CB !important;
   padding: 2px 7px;
   font-size: 14px;
+}
+.model-pages__card--excerpt {
+  font-weight: 300;
+  line-height: 1.6;
+  margin-top: 0px;
 }
 .model-pages__card h2 {
   margin-top: 5px;

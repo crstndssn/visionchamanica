@@ -17,7 +17,7 @@
         <a href="{{ article.url }}">
           <h2>{{ article.title }}</h2>
         </a>
-        <p>
+        <p class="model-pages__card--excerpt">
           {%- if article.excerpt.size > 0 -%}
             {{ article.excerpt }}
           {%- else -%}

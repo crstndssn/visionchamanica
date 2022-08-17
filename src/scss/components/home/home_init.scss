@@ -14,6 +14,9 @@
   }
 
   &__card {
+    h2 {
+      margin-bottom: 0.5rem;
+  }
     &--img {
       width: auto;
       max-height: 350px;
@@ -30,6 +33,11 @@
       color: #FFF3CB !important;
       padding: 2px 7px;
       font-size: 14px;
+    }
+    &--excerpt {
+      font-weight: 300;
+    line-height: 1.6;
+    margin-top: 0px;
     }
     h2 {
       margin-top: 5px;
