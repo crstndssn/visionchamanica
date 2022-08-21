@@ -80,7 +80,7 @@
   </symbol>
 </svg>
 <{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
-  <header class="header header--{{ section.settings.logo_position }} page-width{% if section.settings.menu != blank %} header--has-menu{% endif %}">
+  <header class="header">
     
     
     <!-- modal search don't delete -->
@@ -128,7 +128,7 @@
                     <input type="hidden" name="options[prefix]" value="last">
                     <button class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
                       <svg class="icon icon-search" aria-hidden="true" focusable="false" role="presentation">
-                        <use href="#icon-search">
+                        <!-- <use href="#icon-search"> -->
                       </svg>
                     </button> 
                   </div>
@@ -162,14 +162,18 @@
 
     <!-- logos redes sociales -->
     <div class="social-logos">
-      {% render 'icon-instagram'%}
-      {% render 'icon-twitter'%}
-      {% render 'icon-facebook'%}
+      <a target="_blank" href="">
+        {% render 'icon-instagram'%}
+      </a>
+      <a target="_blank" href="">
+        {% render 'icon-twitter'%}
+      </a>
+      <a target="_blank" href="">
+        {% render 'icon-facebook'%}
+      </a>
     </div>
 
-    <!-- logos redes sociales -->
-
-
+    <!-- search / car -->
     <div class="header__icons">
       <details-modal class="header__search">
         <details>
@@ -259,7 +263,9 @@
         </a>
       {%- endif -%}
 
-      <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
+      <!-- CAR -->
+
+      <!-- <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
         {%- liquid
           if cart == empty
             render 'icon-cart-empty'
@@ -276,8 +282,12 @@
             <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
           </div>
         {%- endif -%}
-      </a>
+      </a> -->
+
     </div>
+
+
+    
   </header>
 </{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %}>
 

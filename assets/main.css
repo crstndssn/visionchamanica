@@ -62,22 +62,40 @@ img {
 
 .header {
   max-width: 1600px !important;
-  background-color: #00000017 !important;
   padding-top: 3px !important;
   margin: 10px auto !important;
   padding-bottom: 3px !important;
   border-radius: 10px;
 }
 
+.header {
+  display: grid;
+  grid-template-areas: "left-icon heading icons";
+  grid-template-columns: 1fr 1fr !important;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .social-logos {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 10px;
+  column-gap: 20px;
   background-color: transparent !important;
 }
 .social-logos svg {
   width: 24px;
+  height: 24px;
+}
+
+.header__icon {
+  height: auto !important;
+  width: 100% !important;
+}
+
+img {
+  border-radius: 10px;
 }
 
 .logo-header {
