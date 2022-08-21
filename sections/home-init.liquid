@@ -1,8 +1,88 @@
 <div class="model-pages">
-  {% assign blogName = section.settings.page_blog %}
-  {% for article in blogName.articles %}
+
+  <!-- FIRST COMPONENT -->
+  {% assign firstArticle = section.settings.main_article %}
+  <div class="model-pages__card--main">
+    <a href="{{ firstArticle.url }}">
+      <div class="model-pages__card--img">
+          <img src="{{ firstArticle.image | img_url: 'master' }}" alt="{{ firstArticle.alt }}">
+      </div>
+    </a>
+    {%- for tag in firstArticle.tags -%}
+        <a class="model-pages__card--page" href="{{ blog.url }}/pages/{{ tag | handle }}">
+          {{ tag }}
+        </a>
+        {% unless forloop.last %} {% endunless %}
+    {%- endfor -%}
+    <a href="{{ firstArticle.url }}">
+      <h2>{{ firstArticle.title }}</h2>
+    </a>
+    <p class="model-pages__card--excerpt">
+      {%- if firstArticle.excerpt.size > 0 -%}
+        {{ firstArticle.excerpt }}
+      {%- else -%}
+        {{ firstArticle.content | strip_html | truncate: 150 }}
+      {%- endif -%}
+    </p>
+  </div>
+
+  <!-- SECOND COMPONENT -->
+  {% assign secondtArticle = section.settings.second_article %}
+  <div class="model-pages__card--second">
+    <a href="{{ secondtArticle.url }}">
+      <div class="model-pages__card--img">
+          <img src="{{ secondtArticle.image | img_url: 'master' }}" alt="{{ secondtArticle.alt }}">
+      </div>
+    </a>
+    {%- for tag in secondtArticle.tags -%}
+        <a class="model-pages__card--page" href="{{ blog.url }}/pages/{{ tag | handle }}">
+            {{ tag }}
+        </a>
+        {% unless forloop.last %} {% endunless %}
+    {%- endfor -%}
+    <a href="{{ secondtArticle.url }}">
+      <h2>{{ secondtArticle.title }}</h2>
+    </a>
+    <p class="model-pages__card--excerpt">
+      {%- if secondtArticle.excerpt.size > 0 -%}
+        {{ secondtArticle.excerpt }}
+      {%- else -%}
+        {{ secondtArticle.content | strip_html | truncate: 150 }}
+      {%- endif -%}
+    </p>
+  </div>
+
+  <!-- ALTERNATIVA COMPONENT -->
+  {% assign aterArticle = section.settings.alter_article %}
+  <div class="model-pages__card--alter">
+    <a href="{{ aterArticle.url }}">
+      <div class="model-pages__card--img">
+          <img src="{{ aterArticle.image | img_url: 'master' }}" alt="{{ aterArticle.alt }}">
+      </div>
+    </a>
+    {%- for tag in aterArticle.tags -%}
+        <a class="model-pages__card--page" href="{{ blog.url }}/pages/{{ tag | handle }}">
+            {{ tag }}
+        </a>
+        {% unless forloop.last %} {% endunless %}
+    {%- endfor -%}
+    <a href="{{ aterArticle.url }}">
+      <h2>{{ aterArticle.title }}</h2>
+    </a>
+    <p class="model-pages__card--excerpt">
+      {%- if aterArticle.excerpt.size > 0 -%}
+        {{ aterArticle.excerpt }}
+      {%- else -%}
+        {{ aterArticle.content | strip_html | truncate: 150 }}
+      {%- endif -%}
+    </p>
+  </div>
+
+
+  <!-- {% assign blogName = section.settings.page_blog %}
+  {% for article in blogName.articles %} -->
     <!-- CARD -->
-      <div class="model-pages__card">
+      <!-- <div class="model-pages__card">
         <a href="{{ article.url }}">
           <div class="model-pages__card--img">
               <img src="{{ article.image | img_url: 'master' }}" alt="{{ article.alt }}">
@@ -25,9 +105,10 @@
           {%- endif -%}
         </p>
       </div>
-  {% endfor %}
-</div>
+  {% endfor %} -->
 
+
+</div>
 
 {% schema %}
 {
@@ -38,6 +119,21 @@
       "type": "blog",
       "id": "page_blog",
       "label": "select blog"
+    },
+    {
+      "type": "article",
+      "id": "main_article",
+      "label": "main"
+    },
+    {
+      "type": "article",
+      "id": "second_article",
+      "label": "second"
+    },
+    {
+      "type": "article",
+      "id": "alter_article",
+      "label": "alternative"
     }
   ]
 }
