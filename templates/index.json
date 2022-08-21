@@ -14,7 +14,10 @@
     "home_init": {
       "type": "home-init",
       "settings": {
-        "page_blog": "revista"
+        "page_blog": "revista",
+        "main_article": "revista\/el-regreso-de-las-estatuas",
+        "second_article": "revista\/renovando-la-intencion",
+        "alter_article": "revista\/investigacion-creativa-territorial-y-ancestralidad"
       }
     }
   },
