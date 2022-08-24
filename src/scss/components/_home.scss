@@ -1,9 +1,6 @@
 * {
   background: transparent !important;
   color: #000 !important;
-
-
-
 }
 
 h1,
@@ -103,15 +100,22 @@ span {
   width: 100% !important;
 }
 
-img {
-  border-radius: 10px;
-}
 
 .logo-header {
-  padding: 12px 0;
+  padding: 0;
+  img {
+    border-radius: none !important;
+  }
+  @include media("tablet") {
+    padding: 12px 0;
+  }
 }
+
 
 .container {
   max-width: 1600px !important;
-  margin: 2rem auto !important;
+  margin: 1rem auto !important;
+  @include media("tablet") {
+    margin: 2rem auto !important;
+  }
 }

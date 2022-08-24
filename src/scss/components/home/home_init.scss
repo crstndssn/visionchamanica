@@ -3,11 +3,17 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  margin: 4rem auto 0 auto;
+  margin: 2rem auto 0 auto;
   row-gap: 2rem;
   column-gap: 2rem;
 
+  img {
+    border-radius: 10px;
+  }
+
+
   @include media("tablet") {
+    margin: 4rem auto 0 auto;
     grid-template-columns: repeat(7, 1fr);
     grid-auto-rows: minmax(100px, auto);
   }
