@@ -8,6 +8,46 @@
     },
     "home_color": {
       "type": "home-color",
+      "blocks": {
+        "f0479fd9-2416-46ba-93b5-79c514f714b2": {
+          "type": "brand",
+          "settings": {
+            "brand__name": "pedagogía",
+            "brand__link": "shopify:\/\/pages\/arte",
+            "brand__color": "#363232"
+          }
+        },
+        "447fbe86-d05d-4df6-b561-ce01dea56fa9": {
+          "type": "brand",
+          "settings": {
+            "brand__name": "hierba buena",
+            "brand__link": "",
+            "brand__color": "#60804d"
+          }
+        },
+        "fe31bc96-7c19-43b1-bad6-cf3fcc0f6eb7": {
+          "type": "brand",
+          "settings": {
+            "brand__name": "alimento",
+            "brand__link": "shopify:\/\/pages\/alimentacion",
+            "brand__color": "#864949"
+          }
+        },
+        "606b64b6-3960-4191-8e2d-a9123dc19ea8": {
+          "type": "brand",
+          "settings": {
+            "brand__name": "vibrato",
+            "brand__link": "shopify:\/\/pages\/arte",
+            "brand__color": "#cfda46"
+          }
+        }
+      },
+      "block_order": [
+        "f0479fd9-2416-46ba-93b5-79c514f714b2",
+        "447fbe86-d05d-4df6-b561-ce01dea56fa9",
+        "fe31bc96-7c19-43b1-bad6-cf3fcc0f6eb7",
+        "606b64b6-3960-4191-8e2d-a9123dc19ea8"
+      ],
       "settings": {
       }
     },
