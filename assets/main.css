@@ -35,6 +35,15 @@ span {
   }
 }
 
+body {
+  padding: auto;
+}
+@media (min-width: 720px) {
+  body {
+    padding: 0 3rem !important;
+  }
+}
+
 h1,
 h2,
 h3,
