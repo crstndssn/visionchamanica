@@ -3,6 +3,27 @@ html {
 }
 
 body {
-    background-color: $background !important;
+    background-color: $secondary !important;
     overflow-x: hidden;
+}
+
+.wrapper {
+  max-width: 1600px !important;
+  margin: 1rem auto !important;
+  @include media("tablet") {
+    margin: 2rem auto !important;
+  }
+}
+
+.desktop {
+  display: none;
+  @include media("tablet") {
+    display: initial;
+  }
+}
+.mobile {
+  display: initial;
+  @include media("tablet") {
+    display: none;
+  }
 }
