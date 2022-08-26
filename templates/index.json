@@ -61,7 +61,21 @@
       }
     },
     "home_category": {
-      "type": "home-category"
+      "type": "home-category",
+      "blocks": {
+        "e65f76e6-1588-4bd4-b208-12a04b36fdd7": {
+          "type": "category",
+          "settings": {
+            "category__name": "pedagogía",
+            "category__blog": "pedagogia"
+          }
+        }
+      },
+      "block_order": [
+        "e65f76e6-1588-4bd4-b208-12a04b36fdd7"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
