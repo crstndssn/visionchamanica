@@ -1,0 +1,110 @@
+<div class="home-category">
+ 
+  {% for block in section.blocks %}
+  <h2 class="home-category__name">{{ block.settings.category__name }}</h2>
+  {% assign aterArticle = block.settings.category__blog %}
+  
+
+  <div class="mobile">
+      <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      {% for aterArticle in aterArticle.articles %}
+      <div class="swiper-slide">
+        <!-- card -->
+        <div class="home-category__card--alter">
+            <a href="{{ aterArticle.url }}">
+                <div class="home-category__card--img">
+                    <img src="{{ aterArticle.image | img_url: 'master' }}" alt="{{ aterArticle.alt }}">
+                </div>
+            </a>
+            {%- for tag in aterArticle.tags -%}
+                <a class="home-category__card--page" href="{{ blog.url }}/pages/{{ tag | handle }}">
+                    {{ tag }}
+                </a>
+                {% unless forloop.last %} {% endunless %}
+            {%- endfor -%}
+            <a href="{{ aterArticle.url }}">
+                <h2>{{ aterArticle.title }}</h2>
+            </a>
+            <p class="home-category__card--excerpt">
+            {%- if aterArticle.excerpt.size > 0 -%}
+                {{ aterArticle.excerpt }}
+            {%- else -%}
+                {{ aterArticle.content | strip_html | truncate: 150 }}
+            {%- endif -%}
+            </p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <!-- if we need pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+  </div>
+
+  <div class="desktop">
+     
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper-desktop">
+      {% for aterArticle in aterArticle.articles %}
+
+        <!-- card -->
+        <div class="home-category__card--alter">
+            <a href="{{ aterArticle.url }}">
+                <div class="home-category__card--img">
+                    <img src="{{ aterArticle.image | img_url: 'master' }}" alt="{{ aterArticle.alt }}">
+                </div>
+            </a>
+            {%- for tag in aterArticle.tags -%}
+                <a class="home-category__card--page" href="{{ blog.url }}/pages/{{ tag | handle }}">
+                    {{ tag }}
+                </a>
+                {% unless forloop.last %} {% endunless %}
+            {%- endfor -%}
+            <a href="{{ aterArticle.url }}">
+                <h2>{{ aterArticle.title }}</h2>
+            </a>
+            <p class="home-category__card--excerpt">
+            {%- if aterArticle.excerpt.size > 0 -%}
+                {{ aterArticle.excerpt }}
+            {%- else -%}
+                {{ aterArticle.content | strip_html | truncate: 150 }}
+            {%- endif -%}
+            </p>
+        </div>
+
+      {% endfor %}
+
+
+  </div>
+  </div>
+
+  {% endfor %}
+</div>
+
+{% schema %}
+{
+  "name": "home category",
+  "tag": "section",
+  "class": "wrapper",
+  "blocks": [
+    {
+      "type": "category",
+      "name": "category",
+      "settings": [
+        {
+          "type": "text",
+          "id": "category__name",
+          "label": "name"
+        },
+        {
+          "type": "blog",
+          "id": "category__blog",
+          "label": "blog"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

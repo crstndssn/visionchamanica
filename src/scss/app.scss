@@ -1,14 +1,22 @@
 @import "mixins";
 @import "variables";
+@import "global";
 
-@import "./components/home";
 
-@import "./global";
+// import swiper and modules styles
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+
+
 
 // home
+@import "./components/home";
 @import "./components/home/home_init.scss";
 @import "./components/home/home_color.scss";
+@import "./components/home/home_category.scss";
 
 
 // footer
 @import "./components/footer/footer_init.scss";
+

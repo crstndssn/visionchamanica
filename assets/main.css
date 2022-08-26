@@ -3,8 +3,8 @@
   \************************************************************************************************************/
 /*  Font family  */
 * {
-  background: transparent !important;
-  color: #000 !important;
+  background: transparent;
+  color: #000;
 }
 
 h1,
@@ -50,14 +50,6 @@ h3,
 input {
   color: #000 !important;
   border: #000 !important;
-}
-
-footer * {
-  color: #FFFCEB !important;
-}
-
-.field__label {
-  color: #FFFCEB !important;
 }
 
 a {
@@ -124,26 +116,44 @@ span {
   }
 }
 
-.container {
-  max-width: 1600px !important;
-  margin: 1rem auto !important;
-}
-@media (min-width: 720px) {
-  .container {
-    margin: 2rem auto !important;
-  }
-}
-
 html {
   overflow-x: hidden;
 }
 
 body {
-  background-color: #FFFCEB !important;
+  background-color: #fdf8e9 !important;
   overflow-x: hidden;
 }
 
-.model-pages {
+.wrapper {
+  max-width: 1600px !important;
+  margin: 1rem auto !important;
+}
+@media (min-width: 720px) {
+  .wrapper {
+    margin: 2rem auto !important;
+  }
+}
+
+.desktop {
+  display: none;
+}
+@media (min-width: 720px) {
+  .desktop {
+    display: initial;
+  }
+}
+
+.mobile {
+  display: initial;
+}
+@media (min-width: 720px) {
+  .mobile {
+    display: none;
+  }
+}
+
+.home-init {
   max-width: 1600px;
   width: 100%;
   display: grid;
@@ -152,50 +162,49 @@ body {
   row-gap: 2rem;
   column-gap: 2rem;
 }
-.model-pages img {
+.home-init img {
   border-radius: 10px;
 }
 @media (min-width: 720px) {
-  .model-pages {
+  .home-init {
     margin: 4rem auto 0 auto;
     grid-template-columns: repeat(7, 1fr);
-    grid-auto-rows: minmax(100px, auto);
   }
 }
-.model-pages__card--main {
+.home-init__card--main {
   grid-column: 1;
   grid-row: 1;
 }
 @media (min-width: 720px) {
-  .model-pages__card--main {
+  .home-init__card--main {
     grid-column: 1/5;
     grid-row: 1/5;
   }
 }
-.model-pages__card--second {
+.home-init__card--second {
   grid-column: 1;
   grid-row: 3;
 }
 @media (min-width: 720px) {
-  .model-pages__card--second {
+  .home-init__card--second {
     grid-column: 5/9;
     grid-row: 1/2;
   }
 }
-.model-pages__card--alter {
+.home-init__card--alter {
   grid-column: 1;
   grid-row: 4;
 }
 @media (min-width: 720px) {
-  .model-pages__card--alter {
+  .home-init__card--alter {
     grid-column: 5/9;
     grid-row: 2/2;
   }
 }
-.model-pages__card h2 {
+.home-init__card h2 {
   margin-bottom: 0.5rem;
 }
-.model-pages__card--page {
+.home-init__card--page {
   background-color: #000 !important;
   color: #fff3cb !important;
   padding: 2px 7px;
@@ -205,12 +214,12 @@ body {
   padding: 2px 7px;
   font-size: 14px;
 }
-.model-pages__card--excerpt {
+.home-init__card--excerpt {
   font-weight: 300;
   line-height: 1.6;
   margin-top: 0px;
 }
-.model-pages__card h2 {
+.home-init__card h2 {
   margin-top: 5px;
 }
 

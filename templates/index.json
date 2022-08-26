@@ -59,11 +59,15 @@
         "second_article": "revista\/renovando-la-intencion",
         "alter_article": "revista\/investigacion-creativa-territorial-y-ancestralidad"
       }
+    },
+    "home_category": {
+      "type": "home-category"
     }
   },
   "order": [
     "home_header",
     "home_color",
-    "home_init"
+    "home_init",
+    "home_category"
   ]
 }

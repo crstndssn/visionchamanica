@@ -1,6 +1,6 @@
 * {
-  background: transparent !important;
-  color: #000 !important;
+  background: transparent;
+  color: $primary;
 }
 
 h1,
@@ -15,12 +15,12 @@ p,
 a,
 label {
   font-family: "Ubuntu", sans-serif !important;
-  color: #000 !important;
+  color: $primary !important;
 }
 body,
 span {
-  color: #000 !important;
-  border: #000 !important;
+  color: $primary !important;
+  border: $primary !important;
 
   padding: 0 2rem;
 
@@ -40,18 +40,8 @@ h1,
 h2,
 h3,
 input {
-  color: #000 !important;
-  border: #000 !important;
-}
-
-footer {
-  * {
-    color: #FFFCEB !important;
-  }
-}
-
-.field__label {
-  color: #FFFCEB !important;
+  color: $primary !important;
+  border: $primary !important;
 }
 
 a {
@@ -119,10 +109,3 @@ span {
 }
 
 
-.container {
-  max-width: 1600px !important;
-  margin: 1rem auto !important;
-  @include media("tablet") {
-    margin: 2rem auto !important;
-  }
-}
