@@ -25,7 +25,7 @@
                 {% unless forloop.last %} {% endunless %}
             {%- endfor -%}
             <a href="{{ aterArticle.url }}">
-                <h2>{{ aterArticle.title }}</h2>
+                <h2 class="home-category__card--title">{{ aterArticle.title }}</h2>
             </a>
             <p class="home-category__card--excerpt">
             {%- if aterArticle.excerpt.size > 0 -%}
@@ -63,7 +63,7 @@
                 {% unless forloop.last %} {% endunless %}
             {%- endfor -%}
             <a href="{{ aterArticle.url }}">
-                <h2>{{ aterArticle.title }}</h2>
+                <h2 class="home-category__card--title">{{ aterArticle.title }}</h2>
             </a>
             <p class="home-category__card--excerpt">
             {%- if aterArticle.excerpt.size > 0 -%}
@@ -75,11 +75,8 @@
         </div>
 
       {% endfor %}
-
-
   </div>
   </div>
-
   {% endfor %}
 </div>
 

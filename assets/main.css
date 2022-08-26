@@ -660,6 +660,10 @@ span {
   }
 }
 
+.home-category__name {
+  font-weight: 600;
+  font-size: 35px;
+}
 .home-category__card--img {
   width: 100%;
   height: 300px;
@@ -670,8 +674,12 @@ span {
   text-align: left;
   background: #fdf8e9;
 }
-.home-category__card h2 {
-  margin-bottom: 0.5rem;
+.home-category__card--title {
+  margin: 7px 0;
+  font-size: 2.5rem;
+}
+.home-category__card--category {
+  margin-top: 7px;
 }
 .home-category__card--page {
   background-color: #000 !important;
@@ -682,6 +690,7 @@ span {
   color: #fff3cb !important;
   padding: 2px 7px;
   font-size: 14px;
+  margin-top: 7px;
 }
 .home-category__card--excerpt {
   font-weight: 300;
