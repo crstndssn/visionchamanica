@@ -57,11 +57,12 @@
         "page_blog": "revista",
         "main_article": "revista\/el-regreso-de-las-estatuas",
         "second_article": "revista\/renovando-la-intencion",
-        "alter_article": "revista\/investigacion-creativa-territorial-y-ancestralidad"
+        "alter_article": "hierba-buena\/temazcal"
       }
     },
     "home_category": {
       "type": "home-category",
+      "disabled": true,
       "blocks": {
         "e65f76e6-1588-4bd4-b208-12a04b36fdd7": {
           "type": "category",
