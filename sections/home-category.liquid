@@ -1,10 +1,9 @@
 <div class="home-category">
  
   {% for block in section.blocks %}
-  <h2 class="home-category__name">{{ block.settings.category__name }}</h2>
+    <h2 class="home-category__name">{{ block.settings.category__name }}</h2>
   {% assign aterArticle = block.settings.category__blog %}
   
-
   <div class="mobile">
       <div class="swiper">
     <!-- Additional required wrapper -->
@@ -12,18 +11,12 @@
       {% for aterArticle in aterArticle.articles %}
       <div class="swiper-slide">
         <!-- card -->
-        <div class="home-category__card--alter">
+        <div class="home-category__card--alter"> 
             <a href="{{ aterArticle.url }}">
                 <div class="home-category__card--img">
                     <img src="{{ aterArticle.image | img_url: 'master' }}" alt="{{ aterArticle.alt }}">
                 </div>
             </a>
-            {%- for tag in aterArticle.tags -%}
-                <a class="home-category__card--page" href="{{ blog.url }}/pages/{{ tag | handle }}">
-                    {{ tag }}
-                </a>
-                {% unless forloop.last %} {% endunless %}
-            {%- endfor -%}
             <a href="{{ aterArticle.url }}">
                 <h2 class="home-category__card--title">{{ aterArticle.title }}</h2>
             </a>
@@ -47,8 +40,7 @@
      
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper-desktop">
-      {% for aterArticle in aterArticle.articles %}
-
+      {% for aterArticle in aterArticle.articles limit: 3 %}
         <!-- card -->
         <div class="home-category__card--alter">
             <a href="{{ aterArticle.url }}">
@@ -56,14 +48,8 @@
                     <img src="{{ aterArticle.image | img_url: 'master' }}" alt="{{ aterArticle.alt }}">
                 </div>
             </a>
-            {%- for tag in aterArticle.tags -%}
-                <a class="home-category__card--page" href="{{ blog.url }}/pages/{{ tag | handle }}">
-                    {{ tag }}
-                </a>
-                {% unless forloop.last %} {% endunless %}
-            {%- endfor -%}
             <a href="{{ aterArticle.url }}">
-                <h2 class="home-category__card--title">{{ aterArticle.title }}</h2>
+                <h3 class="home-category__card--title">{{ aterArticle.title }}</h3>
             </a>
             <p class="home-category__card--excerpt">
             {%- if aterArticle.excerpt.size > 0 -%}
@@ -73,10 +59,11 @@
             {%- endif -%}
             </p>
         </div>
-
       {% endfor %}
   </div>
   </div>
+
+  <a href="{{ aterArticle.url }}">ver mas</a>
   {% endfor %}
 </div>
 
