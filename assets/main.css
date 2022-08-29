@@ -453,7 +453,6 @@ h2,
 h3,
 h4 {
   font-family: "Ubuntu" !important;
-  font-weight: 400 !important;
 }
 
 p,
@@ -677,6 +676,7 @@ span {
 .home-category__card--title {
   margin: 7px 0;
   font-size: 2.5rem;
+  font-weight: 400;
 }
 .home-category__card--category {
   margin-top: 7px;
