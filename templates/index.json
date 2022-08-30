@@ -62,7 +62,6 @@
     },
     "home_category": {
       "type": "home-category",
-      "disabled": true,
       "blocks": {
         "e65f76e6-1588-4bd4-b208-12a04b36fdd7": {
           "type": "category",
@@ -70,10 +69,18 @@
             "category__name": "pedagogía",
             "category__blog": "pedagogia"
           }
+        },
+        "e9536159-058f-4ec2-9ab0-4fbdc5098529": {
+          "type": "category",
+          "settings": {
+            "category__name": "hierba buena",
+            "category__blog": "hierba-buena"
+          }
         }
       },
       "block_order": [
-        "e65f76e6-1588-4bd4-b208-12a04b36fdd7"
+        "e65f76e6-1588-4bd4-b208-12a04b36fdd7",
+        "e9536159-058f-4ec2-9ab0-4fbdc5098529"
       ],
       "settings": {
       }
