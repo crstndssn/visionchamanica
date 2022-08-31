@@ -7,11 +7,12 @@ export class Slider {
   
   init() {
       // init Swiper:
-  this.swiper = new Swiper('.swiper', {
-    loop: true,
+  this.swiper = new Swiper('.mySwiper', {
+    loop: false,
     pagination: {
-      el: '.swiper-pagination',
-    },
+      el: ".swiper-pagination",
+      dynamicBullets: true,
+    }
   });
   }
 }
