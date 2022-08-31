@@ -5,39 +5,37 @@
   {% assign aterArticle = block.settings.category__blog %}
   
   <div class="mobile">
-      <div class="swiper">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      {% for aterArticle in aterArticle.articles %}
-      <div class="swiper-slide">
-        <!-- card -->
-        <div class="home-category__card--alter"> 
-            <a href="{{ aterArticle.url }}">
-                <div class="home-category__card--img">
-                    <img src="{{ aterArticle.image | img_url: 'master' }}" alt="{{ aterArticle.alt }}">
-                </div>
-            </a>
-            <a href="{{ aterArticle.url }}">
-                <h2 class="home-category__card--title">{{ aterArticle.title }}</h2>
-            </a>
-            <p class="home-category__card--excerpt">
-            {%- if aterArticle.excerpt.size > 0 -%}
-                {{ aterArticle.excerpt }}
-            {%- else -%}
-                {{ aterArticle.content | strip_html | truncate: 150 }}
-            {%- endif -%}
-            </p>
-        </div>
+    <div class="swiper mySwiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+          {% for aterArticle in aterArticle.articles %}
+            <div class="swiper-slide">
+              <!-- card -->
+              <div class="home-category__card--alter"> 
+                  <a href="{{ aterArticle.url }}">
+                      <div class="home-category__card--img">
+                          <img src="{{ aterArticle.image | img_url: 'master' }}" alt="{{ aterArticle.alt }}">
+                      </div>
+                  </a>
+                  <a href="{{ aterArticle.url }}">
+                      <h2 class="home-category__card--title">{{ aterArticle.title }}</h2>
+                  </a>
+                  <p class="home-category__card--excerpt">
+                  {%- if aterArticle.excerpt.size > 0 -%}
+                      {{ aterArticle.excerpt }}
+                  {%- else -%}
+                      {{ aterArticle.content | strip_html | truncate: 150 }}
+                  {%- endif -%}
+                  </p>
+              </div>
+            </div>
+          {% endfor %}
       </div>
-      {% endfor %}
+      <div class="swiper-pagination"></div>
     </div>
-    <!-- if we need pagination -->
-    <div class="swiper-pagination"></div>
-  </div>
   </div>
 
   <div class="desktop">
-     
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper-desktop">
       {% for aterArticle in aterArticle.articles limit: 3 %}
@@ -60,10 +58,13 @@
             </p>
         </div>
       {% endfor %}
-  </div>
+    </div>
   </div>
 
-  <a href="{{ aterArticle.url }}">ver mas</a>
+  <div class="home-category__card--more">
+    <a href="{{ aterArticle.url }}">ver mas</a>
+  </div>
+
   {% endfor %}
 </div>
 

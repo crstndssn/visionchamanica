@@ -36,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var swip
   \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Slider\": () => (/* binding */ Slider)\n/* harmony export */ });\n/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ \"./node_modules/swiper/swiper.esm.js\");\n\nclass Slider {\n  constructor() {\n    this.init();\n  }\n\n  init() {\n    // init Swiper:\n    this.swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__[\"default\"]('.swiper', {\n      loop: true,\n      pagination: {\n        el: '.swiper-pagination'\n      }\n    });\n  }\n\n}\n\n//# sourceURL=webpack://cristiandussan/./src/js/slider.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Slider\": () => (/* binding */ Slider)\n/* harmony export */ });\n/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ \"./node_modules/swiper/swiper.esm.js\");\n\nclass Slider {\n  constructor() {\n    this.init();\n  }\n\n  init() {\n    // init Swiper:\n    this.swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__[\"default\"]('.mySwiper', {\n      loop: false,\n      pagination: {\n        el: \".swiper-pagination\",\n        dynamicBullets: true\n      }\n    });\n  }\n\n}\n\n//# sourceURL=webpack://cristiandussan/./src/js/slider.js?");
 
 /***/ }),
 

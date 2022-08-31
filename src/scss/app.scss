@@ -1,12 +1,15 @@
-@import "mixins";
-@import "variables";
-@import "global";
-
 
 // import swiper and modules styles
 @import 'swiper/css';
 @import 'swiper/css/navigation';
 @import 'swiper/css/pagination';
+
+
+@import "mixins";
+@import "variables";
+@import "global";
+
+
 
 
 
