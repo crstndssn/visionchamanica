@@ -40,13 +40,22 @@
             "brand__link": "shopify:\/\/blogs\/vibrato",
             "brand__color": "#cfda46"
           }
+        },
+        "34a2c84f-01be-4a83-8def-bf13716b9b02": {
+          "type": "brand",
+          "settings": {
+            "brand__name": "territorio",
+            "brand__link": "shopify:\/\/blogs\/territorio",
+            "brand__color": "#99a137"
+          }
         }
       },
       "block_order": [
         "f0479fd9-2416-46ba-93b5-79c514f714b2",
         "447fbe86-d05d-4df6-b561-ce01dea56fa9",
         "fe31bc96-7c19-43b1-bad6-cf3fcc0f6eb7",
-        "606b64b6-3960-4191-8e2d-a9123dc19ea8"
+        "606b64b6-3960-4191-8e2d-a9123dc19ea8",
+        "34a2c84f-01be-4a83-8def-bf13716b9b02"
       ],
       "settings": {
       }
