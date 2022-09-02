@@ -35,6 +35,7 @@
         },
         "606b64b6-3960-4191-8e2d-a9123dc19ea8": {
           "type": "brand",
+          "disabled": true,
           "settings": {
             "brand__name": "vibrato",
             "brand__link": "shopify:\/\/blogs\/vibrato",
@@ -63,7 +64,7 @@
     "home_init": {
       "type": "home-init",
       "settings": {
-        "page_blog": "revista",
+        "page_blog": "",
         "main_article": "revista\/el-regreso-de-las-estatuas",
         "second_article": "revista\/renovando-la-intencion",
         "alter_article": "hierba-buena\/temazcal"
