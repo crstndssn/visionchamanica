@@ -13,15 +13,15 @@
           "type": "brand",
           "settings": {
             "brand__name": "pedagogía",
-            "brand__link": "shopify:\/\/pages\/arte",
-            "brand__color": "#363232"
+            "brand__link": "shopify:\/\/blogs\/pedagogia",
+            "brand__color": "#252525"
           }
         },
         "447fbe86-d05d-4df6-b561-ce01dea56fa9": {
           "type": "brand",
           "settings": {
             "brand__name": "hierba buena",
-            "brand__link": "",
+            "brand__link": "shopify:\/\/blogs\/hierba-buena",
             "brand__color": "#60804d"
           }
         },
@@ -29,7 +29,7 @@
           "type": "brand",
           "settings": {
             "brand__name": "alimento",
-            "brand__link": "shopify:\/\/pages\/alimentacion",
+            "brand__link": "shopify:\/\/blogs\/alimento",
             "brand__color": "#864949"
           }
         },
@@ -37,7 +37,7 @@
           "type": "brand",
           "settings": {
             "brand__name": "vibrato",
-            "brand__link": "shopify:\/\/pages\/arte",
+            "brand__link": "shopify:\/\/blogs\/vibrato",
             "brand__color": "#cfda46"
           }
         }
@@ -76,11 +76,19 @@
             "category__name": "hierba buena",
             "category__blog": "hierba-buena"
           }
+        },
+        "908ac6ce-bce7-42f8-a5de-51b22675f6a8": {
+          "type": "category",
+          "settings": {
+            "category__name": "territorio",
+            "category__blog": ""
+          }
         }
       },
       "block_order": [
         "e65f76e6-1588-4bd4-b208-12a04b36fdd7",
-        "e9536159-058f-4ec2-9ab0-4fbdc5098529"
+        "e9536159-058f-4ec2-9ab0-4fbdc5098529",
+        "908ac6ce-bce7-42f8-a5de-51b22675f6a8"
       ],
       "settings": {
       }
