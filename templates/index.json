@@ -63,11 +63,11 @@
     "home_category": {
       "type": "home-category",
       "blocks": {
-        "e65f76e6-1588-4bd4-b208-12a04b36fdd7": {
+        "908ac6ce-bce7-42f8-a5de-51b22675f6a8": {
           "type": "category",
           "settings": {
-            "category__name": "pedagogía",
-            "category__blog": "pedagogia"
+            "category__name": "territorio",
+            "category__blog": "territorio"
           }
         },
         "e9536159-058f-4ec2-9ab0-4fbdc5098529": {
@@ -77,18 +77,34 @@
             "category__blog": "hierba-buena"
           }
         },
-        "908ac6ce-bce7-42f8-a5de-51b22675f6a8": {
+        "e65f76e6-1588-4bd4-b208-12a04b36fdd7": {
           "type": "category",
           "settings": {
-            "category__name": "territorio",
-            "category__blog": ""
+            "category__name": "pedagogía",
+            "category__blog": "pedagogia"
+          }
+        },
+        "1f8190c0-a359-434b-9992-3338904d90da": {
+          "type": "category",
+          "settings": {
+            "category__name": "alimento",
+            "category__blog": "alimento"
+          }
+        },
+        "8896a77b-2347-4ba6-9a55-481131d4c7c1": {
+          "type": "category",
+          "settings": {
+            "category__name": "vibrato",
+            "category__blog": "vibrato"
           }
         }
       },
       "block_order": [
-        "e65f76e6-1588-4bd4-b208-12a04b36fdd7",
+        "908ac6ce-bce7-42f8-a5de-51b22675f6a8",
         "e9536159-058f-4ec2-9ab0-4fbdc5098529",
-        "908ac6ce-bce7-42f8-a5de-51b22675f6a8"
+        "e65f76e6-1588-4bd4-b208-12a04b36fdd7",
+        "1f8190c0-a359-434b-9992-3338904d90da",
+        "8896a77b-2347-4ba6-9a55-481131d4c7c1"
       ],
       "settings": {
       }
