@@ -13,15 +13,15 @@
           "type": "brand",
           "settings": {
             "brand__name": "pedagogía",
-            "brand__link": "shopify:\/\/pages\/arte",
-            "brand__color": "#363232"
+            "brand__link": "shopify:\/\/blogs\/pedagogia",
+            "brand__color": "#252525"
           }
         },
         "447fbe86-d05d-4df6-b561-ce01dea56fa9": {
           "type": "brand",
           "settings": {
             "brand__name": "hierba buena",
-            "brand__link": "",
+            "brand__link": "shopify:\/\/blogs\/hierba-buena",
             "brand__color": "#60804d"
           }
         },
@@ -29,16 +29,25 @@
           "type": "brand",
           "settings": {
             "brand__name": "alimento",
-            "brand__link": "shopify:\/\/pages\/alimentacion",
+            "brand__link": "shopify:\/\/blogs\/alimento",
             "brand__color": "#864949"
           }
         },
         "606b64b6-3960-4191-8e2d-a9123dc19ea8": {
           "type": "brand",
+          "disabled": true,
           "settings": {
             "brand__name": "vibrato",
-            "brand__link": "shopify:\/\/pages\/arte",
+            "brand__link": "shopify:\/\/blogs\/vibrato",
             "brand__color": "#cfda46"
+          }
+        },
+        "34a2c84f-01be-4a83-8def-bf13716b9b02": {
+          "type": "brand",
+          "settings": {
+            "brand__name": "territorio",
+            "brand__link": "shopify:\/\/blogs\/territorio",
+            "brand__color": "#99a137"
           }
         }
       },
@@ -46,7 +55,8 @@
         "f0479fd9-2416-46ba-93b5-79c514f714b2",
         "447fbe86-d05d-4df6-b561-ce01dea56fa9",
         "fe31bc96-7c19-43b1-bad6-cf3fcc0f6eb7",
-        "606b64b6-3960-4191-8e2d-a9123dc19ea8"
+        "606b64b6-3960-4191-8e2d-a9123dc19ea8",
+        "34a2c84f-01be-4a83-8def-bf13716b9b02"
       ],
       "settings": {
       }
@@ -54,25 +64,57 @@
     "home_init": {
       "type": "home-init",
       "settings": {
-        "page_blog": "revista",
+        "page_blog": "",
         "main_article": "revista\/el-regreso-de-las-estatuas",
         "second_article": "revista\/renovando-la-intencion",
-        "alter_article": "revista\/investigacion-creativa-territorial-y-ancestralidad"
+        "alter_article": "hierba-buena\/temazcal"
       }
     },
     "home_category": {
       "type": "home-category",
       "blocks": {
-        "e6f83e9a-6410-4c60-a140-9a6cde072767": {
+        "908ac6ce-bce7-42f8-a5de-51b22675f6a8": {
+          "type": "category",
+          "settings": {
+            "category__name": "territorio",
+            "category__blog": "territorio"
+          }
+        },
+        "e9536159-058f-4ec2-9ab0-4fbdc5098529": {
+          "type": "category",
+          "settings": {
+            "category__name": "hierba buena",
+            "category__blog": "hierba-buena"
+          }
+        },
+        "e65f76e6-1588-4bd4-b208-12a04b36fdd7": {
           "type": "category",
           "settings": {
             "category__name": "pedagogía",
             "category__blog": "pedagogia"
           }
+        },
+        "1f8190c0-a359-434b-9992-3338904d90da": {
+          "type": "category",
+          "settings": {
+            "category__name": "alimento",
+            "category__blog": "alimento"
+          }
+        },
+        "8896a77b-2347-4ba6-9a55-481131d4c7c1": {
+          "type": "category",
+          "settings": {
+            "category__name": "vibrato",
+            "category__blog": "vibrato"
+          }
         }
       },
       "block_order": [
-        "e6f83e9a-6410-4c60-a140-9a6cde072767"
+        "908ac6ce-bce7-42f8-a5de-51b22675f6a8",
+        "e9536159-058f-4ec2-9ab0-4fbdc5098529",
+        "e65f76e6-1588-4bd4-b208-12a04b36fdd7",
+        "1f8190c0-a359-434b-9992-3338904d90da",
+        "8896a77b-2347-4ba6-9a55-481131d4c7c1"
       ],
       "settings": {
       }
