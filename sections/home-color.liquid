@@ -2,7 +2,7 @@
   {% for block in section.blocks %}
     <div class="home-color__grid">
       {% assign color = block.settings.brand__color %}
-      <a target="_blank" href="{{ block.settings.brand__link }}" style="background: {{ color }} !important;">{{ block.settings.brand__name }}</a>
+      <a href="{{ block.settings.brand__link }}" style="color: {{ color }} !important; border: 2px {{ color }} solid;">{{ block.settings.brand__name }}</a>
     </div>
   {% endfor %}
 </div>

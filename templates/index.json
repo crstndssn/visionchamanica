@@ -3,7 +3,7 @@
     "home_header": {
       "type": "home-header",
       "settings": {
-        "home_header": "encuentrodesaberes.svg"
+        "home_header": "VISION-CHAMANIK.svg"
       }
     },
     "home_color": {
@@ -14,7 +14,7 @@
           "settings": {
             "brand__name": "pedagogía",
             "brand__link": "shopify:\/\/blogs\/pedagogia",
-            "brand__color": "#252525"
+            "brand__color": "#f5bc0a"
           }
         },
         "447fbe86-d05d-4df6-b561-ce01dea56fa9": {
@@ -22,7 +22,7 @@
           "settings": {
             "brand__name": "hierba buena",
             "brand__link": "shopify:\/\/blogs\/hierba-buena",
-            "brand__color": "#60804d"
+            "brand__color": "#7cbc56"
           }
         },
         "fe31bc96-7c19-43b1-bad6-cf3fcc0f6eb7": {
@@ -30,7 +30,7 @@
           "settings": {
             "brand__name": "alimento",
             "brand__link": "shopify:\/\/blogs\/alimento",
-            "brand__color": "#864949"
+            "brand__color": "#d62020"
           }
         },
         "606b64b6-3960-4191-8e2d-a9123dc19ea8": {
@@ -47,7 +47,7 @@
           "settings": {
             "brand__name": "territorio",
             "brand__link": "shopify:\/\/blogs\/territorio",
-            "brand__color": "#99a137"
+            "brand__color": "#1b78c4"
           }
         }
       },

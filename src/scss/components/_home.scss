@@ -1,27 +1,28 @@
 * {
-  background: transparent;
   color: $primary;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: "Ubuntu" !important;
+  font-family: 'Poppins', sans-serif !important;
 }
 
 p,
 a,
 label {
-  font-family: "Ubuntu", sans-serif !important;
+  font-family: 'Poppins', sans-serif !important;
   color: $primary !important;
 }
 body,
 span {
-  color: $primary !important;
-  border: $primary !important;
-
-  padding: 0 2rem;
+  color: $primary;
+  border: $primary;
 
   @include media("tablet") {
     padding: 0;
@@ -30,9 +31,7 @@ span {
 
 body {
   padding: auto;
-  @include media("tablet") {
-    padding: 0 3rem !important;
-  }
+  margin: 0;
 }
 
 h1,
@@ -41,6 +40,7 @@ h3,
 input {
   color: $primary !important;
   border: $primary !important;
+  
 }
 
 a {
@@ -96,15 +96,10 @@ span {
   width: 100% !important;
 }
 
-
 .logo-header {
-  padding: 0;
-  img {
-    border-radius: none !important;
-  }
-  @include media("tablet") {
-    padding: 12px 0;
-  }
+  width: 95%;
+  margin: 1rem auto;
 }
+
 
 

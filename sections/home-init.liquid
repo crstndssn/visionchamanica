@@ -3,80 +3,97 @@
   <!-- first component -->
   {% assign firstArticle = section.settings.main_article %}
   <div class="home-init__card--main">
+    
     <a href="{{ firstArticle.url }}">
       <div class="home-init__card--img">
           <img src="{{ firstArticle.image | img_url: 'master' }}" alt="{{ firstArticle.alt }}">
       </div>
     </a>
-    {%- for tag in firstArticle.tags -%}
-        <a class="home-init__card--page" href="{{ blog.url }}/pages/{{ tag | handle }}">
-          {{ tag }}
-        </a>
-        {% unless forloop.last %} {% endunless %}
-    {%- endfor -%}
-    <a href="{{ firstArticle.url }}">
-      <h2>{{ firstArticle.title }}</h2>
-    </a>
-    <p class="home-init__card--excerpt">
-      {%- if firstArticle.excerpt.size > 0 -%}
-        {{ firstArticle.excerpt }}
-      {%- else -%}
-        {{ firstArticle.content | strip_html | truncate: 150 }}
-      {%- endif -%}
-    </p>
+
+    <div class="home-init__card--container">
+      <a href="{{ firstArticle.url }}">
+        <h2>{{ firstArticle.title }}</h2>
+        {%- for tag in firstArticle.tags -%}
+          <p class="home-init__card--page">
+            {{ tag }}
+          </p>
+          {% unless forloop.last %} {% endunless %}
+        {%- endfor -%}
+        <p class="home-init__card--excerpt">
+          {%- if firstArticle.excerpt.size > 0 -%}
+            {{ firstArticle.excerpt }}
+          {%- else -%}
+            {{ firstArticle.content | strip_html | truncate: 150 }}
+          {%- endif -%}
+        </p>
+      </a>
+    </div>
+  
   </div>
 
   <!-- second component -->
   {% assign secondtArticle = section.settings.second_article %}
   <div class="home-init__card--second">
+    
     <a href="{{ secondtArticle.url }}">
       <div class="home-init__card--img">
           <img src="{{ secondtArticle.image | img_url: 'master' }}" alt="{{ secondtArticle.alt }}">
       </div>
+      <div class="home-init__card--container">
+          <h2>{{ secondtArticle.title }}</h2>
+          {%- for tag in secondtArticle.tags -%}
+            <p class="home-init__card--page">
+              {{ tag }}
+            </p>
+            {% unless forloop.last %} {% endunless %}
+          {%- endfor -%}
+          <p class="home-init__card--excerpt">
+            {%- if secondtArticle.excerpt.size > 0 -%}
+              {{ secondtArticle.excerpt }}
+            {%- else -%}
+              {{ secondtArticle.content | strip_html | truncate: 150 }}
+            {%- endif -%}
+          </p>
+      </div>
     </a>
-    {%- for tag in secondtArticle.tags -%}
-        <a class="home-init__card--page" href="{{ blog.url }}/pages/{{ tag | handle }}">
-            {{ tag }}
-        </a>
-        {% unless forloop.last %} {% endunless %}
-    {%- endfor -%}
-    <a href="{{ secondtArticle.url }}">
-      <h2>{{ secondtArticle.title }}</h2>
-    </a>
-    <p class="home-init__card--excerpt">
-      {%- if secondtArticle.excerpt.size > 0 -%}
-        {{ secondtArticle.excerpt }}
-      {%- else -%}
-        {{ secondtArticle.content | strip_html | truncate: 150 }}
-      {%- endif -%}
-    </p>
   </div>
 
   <!-- alternative component -->
   {% assign aterArticle = section.settings.alter_article %}
   <div class="home-init__card--alter">
+    
     <a href="{{ aterArticle.url }}">
       <div class="home-init__card--img">
           <img src="{{ aterArticle.image | img_url: 'master' }}" alt="{{ aterArticle.alt }}">
       </div>
     </a>
-    {%- for tag in aterArticle.tags -%}
-        <a class="home-init__card--page" href="{{ blog.url }}/pages/{{ tag | handle }}">
+
+    <div class="home-init__card--container">
+      <a href="{{ aterArticle.url }}">
+        <h2>{{ aterArticle.title }}</h2>
+        {%- for tag in aterArticle.tags -%}
+          <p class="home-init__card--page">
             {{ tag }}
-        </a>
-        {% unless forloop.last %} {% endunless %}
-    {%- endfor -%}
-    <a href="{{ aterArticle.url }}">
-      <h2>{{ aterArticle.title }}</h2>
-    </a>
-    <p class="home-init__card--excerpt">
-      {%- if aterArticle.excerpt.size > 0 -%}
-        {{ aterArticle.excerpt }}
-      {%- else -%}
-        {{ aterArticle.content | strip_html | truncate: 150 }}
-      {%- endif -%}
-    </p>
+          </p>
+          {% unless forloop.last %} {% endunless %}
+        {%- endfor -%}
+        <p class="home-init__card--excerpt">
+          {%- if aterArticle.excerpt.size > 0 -%}
+            {{ aterArticle.excerpt }}
+          {%- else -%}
+            {{ aterArticle.content | strip_html | truncate: 150 }}
+          {%- endif -%}
+        </p>
+      </a>
+    </div>
+
+
+
+
   </div>
+
+
+
 </div>
 
 {% schema %}

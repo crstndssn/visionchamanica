@@ -2,5 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 4rem 0;
+  padding: 0.5rem 0;
+  background: black;
+
+  p {
+    color: white !important;
+  }
 }
