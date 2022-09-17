@@ -1,101 +1,82 @@
 <div class="home-category">
- 
   {% for block in section.blocks %}
-    
-    {% assign aterArticle = block.settings.category__blog %}
-
-    <div class="home-category__item {{ block.settings.category__blog }}">
-
-      <h2 class="home-category__name">{{ block.settings.category__name }}</h2>
-
-
-
-<div class="mobile {{ block.settings.category__name }}">
-        <div class="swiper mySwiper">
-          <!-- Additional required wrapper -->  
-          <div class="swiper-wrapper">
-              {% for aterArticle in aterArticle.articles %}
-                <div class="swiper-slide">
-                  <!-- card -->
-                  <div class="home-category__card--alter {{ block.settings.category__name }}"> 
-                      <a href="{{ aterArticle.url }}">
-                          <div class="home-category__card--img">
-                              <img src="{{ aterArticle.image | img_url: 'master' }}" alt="{{ aterArticle.alt }}">
-                          </div>
-                      </a>
-                      <a href="{{ aterArticle.url }}">
-                          <h2 class="home-category__card--title">{{ aterArticle.title }}</h2>
-                      </a>
-                  </div>
-                </div>
-              {% endfor %}
-          </div>
-          <div class="swiper-pagination"></div>
-          
-        </div>
-        <div class="home-category__card--more">
-          <a href="{{ aterArticle.url }}">ver mas</a>
-        </div>
-
-      </div>
-
-      <div class="desktop">
+  {% assign aterArticle = block.settings.category__blog %}
+  <div class="home-category__item {{ block.settings.category__blog }}">
+    <h2 class="home-category__name">{{ block.settings.category__name }}</h2>
+    <div class="mobile {{ block.settings.category__name }}">
+      <div class="swiper mySwiper">
         <!-- Additional required wrapper -->
-        <div class="swiper-wrapper-desktop">
-          
-          {% for aterArticle in aterArticle.articles limit: 3 %}
+        <div class="swiper-wrapper">
+          {% for aterArticle in aterArticle.articles %}
+          <div class="swiper-slide">
             <!-- card -->
-            <div class="home-category__card--alter {{ block.settings.category__name }}"> 
+            <div class="home-category__card--alter {{ block.settings.category__name }}">
               <a href="{{ aterArticle.url }}">
-                  <div class="home-category__card--img">
-                      <img src="{{ aterArticle.image | img_url: 'master' }}" alt="{{ aterArticle.alt }}">
-                  </div>
+                <div class="home-category__card--img">
+                  <img src="{{ aterArticle.image | img_url: 'master' }}" alt="{{ aterArticle.alt }}">
+                </div>
               </a>
               <a href="{{ aterArticle.url }}">
-                  <h2 class="home-category__card--title">{{ aterArticle.title }}</h2>
+                <h2 class="home-category__card--title">{{ aterArticle.title }}</h2>
               </a>
+            </div>
           </div>
           {% endfor %}
-          <div class="home-category__card--more">
-            <a href="{{ aterArticle.url }}">ver mas</a>
-          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="home-category__card--more">
+        <a href="{{ aterArticle.url }}">ver mas</a>
+      </div>
+    </div>
 
+    <div class="desktop">
+      <div>
+        <div class="swiper-wrapper-desktop">
+          {% for aterArticle in aterArticle.articles limit: 3 %}
+          <!-- card -->
+          <div class="home-category__card--alter {{ block.settings.category__name }}">
+            <a href="{{ aterArticle.url }}">
+              <div class="home-category__card--img">
+                <img src="{{ aterArticle.image | img_url: 'master' }}" alt="{{ aterArticle.alt }}">
+              </div>
+            </a>
+            <a href="{{ aterArticle.url }}">
+              <h2 class="home-category__card--title">{{ aterArticle.title }}</h2>
+            </a>
+          </div>
+          {% endfor %}
         </div>
       </div>
-
-
-
-
+      <div class="home-category__card--more">
+        <a href="{{ aterArticle.url }}">ver mas</a>
+      </div>
     </div>
-  
-      
-
-
-
+  </div>
   {% endfor %}
 </div>
 
 {% schema %}
 {
-  "name": "home category",
-  "tag": "section",
-  "blocks": [
-    {
-      "type": "category",
-      "name": "category",
-      "settings": [
-        {
-          "type": "text",
-          "id": "category__name",
-          "label": "name"
-        },
-        {
-          "type": "blog",
-          "id": "category__blog",
-          "label": "blog"
-        }
-      ]
-    }
-  ]
+"name": "home category",
+"tag": "section",
+"blocks": [
+{
+"type": "category",
+"name": "category",
+"settings": [
+{
+"type": "text",
+"id": "category__name",
+"label": "name"
+},
+{
+"type": "blog",
+"id": "category__blog",
+"label": "blog"
+}
+]
+}
+]
 }
 {% endschema %}

@@ -542,6 +542,10 @@ span {
   margin: 1rem auto;
 }
 
+li {
+  list-style-type: none;
+}
+
 .home-init {
   width: 95%;
   margin: 1rem auto;
@@ -826,6 +830,19 @@ span {
   bottom: 3px;
   left: 0;
   width: 100%;
+}
+
+.blog {
+  background-color: #FFFEF5;
+}
+.blog__title {
+  font-size: 40px;
+  margin-left: 32px;
+}
+.blog__articles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1rem;
 }
 
 .footer {

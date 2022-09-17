@@ -1,0 +1,17 @@
+.blog {
+
+  background-color: $secondary;
+
+  &__title {
+    font-size: 40px;
+    margin-left: 32px;
+  }
+
+  &__articles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+  }
+  
+
+}
