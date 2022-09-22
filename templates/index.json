@@ -20,7 +20,7 @@
         "447fbe86-d05d-4df6-b561-ce01dea56fa9": {
           "type": "brand",
           "settings": {
-            "brand__name": "hierba buena",
+            "brand__name": "forestando",
             "brand__link": "shopify:\/\/blogs\/forestando",
             "brand__color": "#7cbc56"
           }
@@ -82,7 +82,7 @@
         "e9536159-058f-4ec2-9ab0-4fbdc5098529": {
           "type": "category",
           "settings": {
-            "category__name": "hierba buena",
+            "category__name": "forestando",
             "category__blog": "forestando"
           }
         },
