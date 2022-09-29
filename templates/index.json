@@ -9,6 +9,14 @@
     "home_color": {
       "type": "home-color",
       "blocks": {
+        "30ad52f1-21fd-4229-8b07-5d9c8a8305ed": {
+          "type": "brand",
+          "settings": {
+            "brand__name": "arqueología",
+            "brand__link": "shopify:\/\/blogs\/arqueologia",
+            "brand__color": "#40b1a7"
+          }
+        },
         "f0479fd9-2416-46ba-93b5-79c514f714b2": {
           "type": "brand",
           "settings": {
@@ -35,7 +43,6 @@
         },
         "606b64b6-3960-4191-8e2d-a9123dc19ea8": {
           "type": "brand",
-          "disabled": true,
           "settings": {
             "brand__name": "vibrato",
             "brand__link": "shopify:\/\/blogs\/vibrato",
@@ -52,6 +59,7 @@
         }
       },
       "block_order": [
+        "30ad52f1-21fd-4229-8b07-5d9c8a8305ed",
         "f0479fd9-2416-46ba-93b5-79c514f714b2",
         "447fbe86-d05d-4df6-b561-ce01dea56fa9",
         "fe31bc96-7c19-43b1-bad6-cf3fcc0f6eb7",
@@ -72,11 +80,11 @@
     "home_category": {
       "type": "home-category",
       "blocks": {
-        "908ac6ce-bce7-42f8-a5de-51b22675f6a8": {
+        "dd971c14-f541-4504-88d8-52f225e32954": {
           "type": "category",
           "settings": {
-            "category__name": "territorio",
-            "category__blog": "territorio"
+            "category__name": "nuestros abuelos",
+            "category__blog": "arqueologia"
           }
         },
         "e9536159-058f-4ec2-9ab0-4fbdc5098529": {
@@ -84,6 +92,13 @@
           "settings": {
             "category__name": "forestando",
             "category__blog": "forestando"
+          }
+        },
+        "908ac6ce-bce7-42f8-a5de-51b22675f6a8": {
+          "type": "category",
+          "settings": {
+            "category__name": "territorio",
+            "category__blog": "territorio"
           }
         },
         "e65f76e6-1588-4bd4-b208-12a04b36fdd7": {
@@ -102,7 +117,6 @@
         },
         "8896a77b-2347-4ba6-9a55-481131d4c7c1": {
           "type": "category",
-          "disabled": true,
           "settings": {
             "category__name": "vibrato",
             "category__blog": "vibrato"
@@ -110,8 +124,9 @@
         }
       },
       "block_order": [
-        "908ac6ce-bce7-42f8-a5de-51b22675f6a8",
+        "dd971c14-f541-4504-88d8-52f225e32954",
         "e9536159-058f-4ec2-9ab0-4fbdc5098529",
+        "908ac6ce-bce7-42f8-a5de-51b22675f6a8",
         "e65f76e6-1588-4bd4-b208-12a04b36fdd7",
         "1f8190c0-a359-434b-9992-3338904d90da",
         "8896a77b-2347-4ba6-9a55-481131d4c7c1"

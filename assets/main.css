@@ -814,14 +814,17 @@ li {
 .home-category .pedagogia {
   background: #F5BC08;
 }
-.home-category .hierba-buena {
+.home-category .forestando {
   background: #7cbc56;
 }
 .home-category .alimento {
   background: #d62020;
 }
 .home-category .vibrato {
-  background: #1b78c4;
+  background: #CFDA46;
+}
+.home-category .arqueologia {
+  background: #40B1A7;
 }
 .home-category .swiper-horizontal > .swiper-pagination-bullets,
 .home-category .swiper-pagination-bullets.swiper-pagination-horizontal,
