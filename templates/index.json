@@ -20,8 +20,8 @@
         "447fbe86-d05d-4df6-b561-ce01dea56fa9": {
           "type": "brand",
           "settings": {
-            "brand__name": "hierba buena",
-            "brand__link": "shopify:\/\/blogs\/hierba-buena",
+            "brand__name": "forestando",
+            "brand__link": "shopify:\/\/blogs\/forestando",
             "brand__color": "#7cbc56"
           }
         },
@@ -66,7 +66,7 @@
       "settings": {
         "main_article": "revista\/el-regreso-de-las-estatuas",
         "second_article": "territorio\/renovando-la-intencion",
-        "alter_article": "hierba-buena\/temazcal"
+        "alter_article": "pedagogia\/temazcal"
       }
     },
     "home_category": {
@@ -82,8 +82,8 @@
         "e9536159-058f-4ec2-9ab0-4fbdc5098529": {
           "type": "category",
           "settings": {
-            "category__name": "hierba buena",
-            "category__blog": "hierba-buena"
+            "category__name": "forestando",
+            "category__blog": "forestando"
           }
         },
         "e65f76e6-1588-4bd4-b208-12a04b36fdd7": {
@@ -102,6 +102,7 @@
         },
         "8896a77b-2347-4ba6-9a55-481131d4c7c1": {
           "type": "category",
+          "disabled": true,
           "settings": {
             "category__name": "vibrato",
             "category__blog": "vibrato"

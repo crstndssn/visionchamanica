@@ -5,21 +5,20 @@
 
 {%- paginate blog.articles by 6 -%}
 
-  <div class="main-blog page-width">
-    <h1 class="title--primary">{{ blog.title | escape }}</h1>
-
-    <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
+  <div class="blog">
+    <h1 class="blog__title">{{ blog.title | escape }}</h1>
+    <div class="blog__articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
       {%- for article in blog.articles -%}
-        <div class="blog-articles__article article">
+        <div class="blog__articles--card">
           {%- render 'article-card', article: article, image_height: section.settings.image_height, show_image: section.settings.show_image, show_date: section.settings.show_date, show_author: section.settings.show_author -%}
         </div>
       {%- endfor -%}
     </div>
-
     {%- if paginate.pages > 1 -%}
       {%- render 'pagination', paginate: paginate -%}
     {%- endif -%}
   </div>
+
 {%- endpaginate -%}
 
 {% schema %}

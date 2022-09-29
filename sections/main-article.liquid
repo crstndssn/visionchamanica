@@ -1,6 +1,6 @@
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
 
-<article class="article-template" itemscope itemtype="http://schema.org/BlogPosting">
+<article class="article" itemscope itemtype="http://schema.org/BlogPosting">
   {%- for block in section.blocks -%}
     {%- case block.type -%}
       {%- when '@app' -%}
@@ -9,11 +9,7 @@
         </div>
       {%- when 'featured_image'-%}
         {%- if article.image -%}
-          <div class="article-template__hero-container" {{ block.shopify_attributes }}>
-            <div class="article-template__hero-{{ block.settings.image_height }} media"
-              itemprop="image"
-              {% if block.settings.image_height == 'adapt' and article.image %} style="padding-bottom: {{ 1 | divided_by: article.image.aspect_ratio | times: 100 }}%;"{% endif %}
-            >
+
               <img
                 srcset="{% if article.image.width >= 350 %}{{ article.image | img_url: '350x' }} 350w,{% endif %}
                   {% if article.image.width >= 750 %}{{ article.image | img_url: '750x' }} 750w,{% endif %}
@@ -28,8 +24,7 @@
                 width="{{ article.image.width }}"
                 height="{{ article.image.height }}"
                 alt="{{ article.image.alt | escape }}">
-            </div>
-          </div>
+      
         {%- endif -%}
 
         {%- when 'title'-%}
@@ -94,7 +89,6 @@
 
   <div class="element-margin center">
     <a href="http://visionchamanica.com/" class="article-template__link link animate-arrow{% if blog.comments_enabled? == false %} spaced-section{% endif %}">
-      <span class="icon-wrap">{% render 'icon-arrow' %}</span>
       leer otros artículos
     </a>
   </div>
